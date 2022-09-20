@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+button {
+    color: green;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    background: whitesmoke;
+}
+input{
+    text-align: center;
+    border-color: yellow;
+}
+td{
+    width: 90px;
+}

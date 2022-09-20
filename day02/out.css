@@ -1,0 +1,9 @@
+body{
+    /*속성명 : 속성값*/
+    /* : - 콜론, ; - 세미콜론 */
+
+    background : gainsboro;
+    color: darkslategrey;
+
+}
+/* body라는 태그를 만나면 배경색과 글자색을 스타일로 지정 */
