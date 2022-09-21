@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        tr{
+            align-content: center;
+            text-align: center;
+            margin: auto;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .form{
+            text-align: center;
+            vertical-align: middle;
+            width: 500px;
+            height: 300px;
+            margin:auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>세계 명화</h1>
+        <table class="table table-bordered">
+            <tr>
+                <td><img src="img/star.jpg" id="picture" alt="별이 빛나는 밤에"></td>
+                <td><a href="https://www.naver.com"><img src="img/sunday.jpg" alt="그랑드자트섬의 일요일 오후" id="picture"></a></td>
+                <td><img src="img/dinner.jpg" alt="최후의 만찬" id="picture"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#54BCE8">별이 빛나는 밤에</td>
+                <td bgcolor="#54BCE8">그랑드자트섬의 일요일 오후</td>
+                <td bgcolor="#54BCE8">최후의 만찬</td>
+            </tr>
+            <tr>
+                <td><img src="img/pearl.jpg" alt="진주목걸이를 한 소녀" id="picture"></td>
+                <td><img src="img/star2.jpg" alt="론강의 별이 빛나는 밤에" id="picture"></td>
+                <td><img src="img/nightworker.jpg" alt="밤샘하는 사람들" id="picture"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#5ADBBB">진주목걸이를 한 소녀</td>
+                <td bgcolor="#5ADBBB">론강의 별이 빛나는 밤에</td>
+                <td bgcolor="#5ADBBB">밤샘하는 사람들</td>
+            </tr>
+        </table>
+    </div>
+    <div class="form">
+        <label for="comment">소감:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+        <button type="button" class="btn btn-primary" style="margin: 5px;">전송</button>
+      </div>
+</body>
+</html>

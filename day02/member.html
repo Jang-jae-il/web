@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            background: green;
+            border-radius: 50px;
+            text-align: center;
+        }
+        /* li:first-child{
+            border-radius: 50px 0 0 50px;
+        } */
+        /* li:last-child{
+            border-radius: 0 50px 50px 0;
+        } */
+        /* ul의 li가 child 역할 수행 child중에서 몇번째인지 지정 */
+        li:nth-child(2n){
+            background: orange;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        div{
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+        #top{
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+        }
+        #top2{
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background: lightcyan;
+            text-align: center;
+        }
+        #center{
+            padding: 30px;
+            align-content: flex-start;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+        <ul>
+            <li>
+                <a href="member.html">회원가입</a>
+            </li>
+            <li>
+                <a href="product.html">제품정보</a>
+            </li>
+            <li>
+                <a href="bbs.html">게시판</a>
+            </li>
+            <li>
+                <a href="basket.html">장바구니</a>
+            </li>
+        </ul>
+        </div>
+        <div id = "top2">
+            장바구니
+        </div>
+        <div id="center">
+            <form action="check">
+                <h3>로그인 화면</h3>
+                아이디 <input type="text" name="id" class="login"> <br>
+                패스워드 <input type="password" name="pw"  class="login"> <br>
+                <input type="submit" value="로그인 처리2">
+                <!-- ctrl + / : 자동주석 설정/해제 -->
+                <!-- 이클립스의 단축키 ctrl + alt + 화살표(아래): 한줄복사!  -->
+                <!-- 이클립스의 단축키 ctrl + d : 한줄삭제!  -->
+                <!-- 이클립스의 단축키 alt + 화살표(아래): 한줄이동!  -->
+                <!-- 여러줄인 경우 블록을 먼저 잡고 + 위에 단축키 -->
+            </form>
+            
+            <hr>
+            <form action="member">
+                <h3>회원가입 화면</h3>
+                가입할id <input type="text" name="id"> <br>
+                가입할pw <input type="text" name="pw"> <br>
+                가입할name <input type="text" 
+                                  name="name"
+                                  placeholder="이름 성순서대로"
+                                  > <br>
+                성별 <input type="radio" name="gender" value="man" checked>남자
+                     <input type="radio" name="gender" value="woman">여자
+                <br>
+                취미 <input type="checkbox" name="hobby" value="run">달리기
+                    <input type="checkbox" name="hobby" value="youbute" checked>동영상보기
+                    <input type="checkbox" name="hobby" value="internet">인터넷서핑
+                <br>
+                전화번호 통신사 
+                <select name="tel">
+                    <option value="sktelecom">SKT</option>
+                    <option value="etctele" selected>알뜰폰</option>
+                    <option value="lgtelecom">LGT</option>
+                </select> 
+                <input type="number" name="number" 
+                    placeholder="-없이 숫자로 이어서쓰세요."
+                >
+                <br>
+                생년월일 <input type="date"> <br>
+                가입한 시기 <input type="datetime-local">
+                가입한 주<input type="week" name="week">
+                <br>
+                하고 싶은 말<br>
+                <textarea   name="word" 
+                            cols="30" 
+                            rows="10"
+                            placeholder="100글자로 이내로  써주세요."
+                            ></textarea>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            background: green;
+            border-radius: 50px;
+            text-align: center;
+        }
+        /* li:first-child{
+            border-radius: 50px 0 0 50px;
+        } */
+        /* li:last-child{
+            border-radius: 0 50px 50px 0;
+        } */
+        /* ul의 li가 child 역할 수행 child중에서 몇번째인지 지정 */
+        li:nth-child(2n){
+            background: orange;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        div{
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+        #top{
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+        }
+        #top2{
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background: lightcyan;
+            text-align: center;
+        }
+        #center{
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+        <ul>
+            <li>
+                <a href="member.html">회원가입</a>
+            </li>
+            <li>
+                <a href="product.html">제품정보</a>
+            </li>
+            <li>
+                <a href="bbs.html">게시판</a>
+            </li>
+            <li>
+                <a href="basket.html">장바구니</a>
+            </li>
+        </ul>
+        </div>
+        <div id = "top2">
+            장바구니
+        </div>
+        <div id="center">
+            <form>
+                <table border="1">
+                    <tr style="background:lawngreen">
+                        <td>항목</td>
+                        <td>입력</td>
+                    </tr>
+                    <tr>
+                        <td>번호</td>
+                        <td><input type="text" name="number" class="login" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td>내용</td>
+                        <td><input type="text" name="text" class="text" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td>작성자</td>
+                        <td><input type="text" name="person" class="person" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" style="background:yellow"> <button>글쓰기 완료.</button></td>
+                    </tr>
+            </form>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
