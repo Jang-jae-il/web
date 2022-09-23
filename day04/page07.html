@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function () {
+            $('#b1').click(function () {
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/ok.html',
+                    success:function(res){
+                        //alert('live서버 통신 성공 '+ res)
+                        $('#d1').html('응답받은 데이터는 ' + res)
+                    },
+                    error: function (error) {
+                        alert('live서버 통신 실패!!!!!!!!!!!' + error)
+                    }
+                })
+            })
+
+            $('#b2').click(function () {
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/tour.html',
+                    success:function(spot){
+                        //alert('live서버 통신 성공 '+ spot)
+                        $('#d2').html('응답받은 데이터는 ' + spot)
+                    },
+                    error: function (error) {
+                        alert('live서버 통신 실패!!!!!!!!!!!' + error)
+                    }
+                })
+            })
+
+            $('#b3').click(function () {
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/weather.html',
+                    success:function(data){
+                        //alert('live서버 통신 성공 '+ data)
+                        $('#d3').html('응답받은 데이터는 ' + data)
+                    },
+                    error: function (error) {
+                        alert('live서버 통신 실패!!!!!!!!!!!' + error)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="b1">내 서버 공공portal로 통신하기</button><br>
+    <button id="b2">내 서버 ok.html로 통신하기</button><br>
+    <button id="b3">내 서버 weather.html로 통신하기</button><br>
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+
+</html>

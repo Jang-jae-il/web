@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#b1').click(function() {
+               //입력
+               idValue = $('#id').val() //test
+               //처리
+                if (idValue.length < 5) {
+                    //$('#result').html('<span style="color:red">5글자 미만</span>')
+                    $('#result').append('<span style="color:red">5글자 미만</span><br>')
+                } else {
+                    //$('#result').html('<span style="color:blue">유효함</span>')
+                    $('#result').append('<span style="color:blue">유효함</span><br>')
+                }
+               //출력
+            })
+        })
+    </script>
+</head>
+<body>
+   아이디 <input id="id" value="test"> <br>
+   <button id="b1">아이디 글자수 체크</button>
+   <hr>
+   패스워드1 <input id="pw1" value="1234"> <br>
+   패스워드2 <input id="pw2" value="1234"> <br>
+   <button id="b2">입력 패스워드 일치 확인</button>
+   <hr>
+   <div id="result"></div>
+</body>
+</html>
